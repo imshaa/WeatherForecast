@@ -14,7 +14,7 @@ if __name__ == '__main__':
     
     
 
-    url = f"https://api.weatherapi.com/v1/current.json?key=4118024bf6c444f1a7a101108251502&q={city}"
+    url = f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY_HERE={city}"
     try:
         r = requests.get(url)
         weather_dic = json.loads(r.text)
